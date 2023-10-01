@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="/output.css" />
+  </head>
+  <body class="p-5 overflow-hidden h-[100%] ">
+    <header>
+      <a href="/pages/page5.html">
+      <img src="/img/arrow-left-short.svg" alt="" />
+    </a>
+    </header>
+    <div class="flex flex-col justify-evenly h-[600px]">
+      <div class="flex justify-center">
+        <img src="/img/logo,black.svg" alt="" />
+      </div>
+      <div class="flex justify-center">
+        <span class="text-[2rem] text-center">Login to Your Account</span>
+      </div>
+      <div class="flex flex-col justify-center items-center gap-3">
+        <div  class="w-[100%] flex">
+           <img src="/img/envelope-fill.svg" alt="">
+          <input class="w-[100%] pl-2 outline-none" type="text" name="" id="email" placeholder="Email" />
+        </div>
+        <div class="w-[100%] flex">
+          <img src="/img/lock-fill.svg" alt="">
+          <input class="w-[100%] pl-2 outline-none" type="password" name="" id="password" placeholder="Password" />
+          <img src="/img/eye-slash-fill.svg" alt="">
+        </div>
+        <span class="pt-8">
+          <input type="checkbox" name="" id="rememberMe" />
+          Remember me
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-center">
+    <button onclick="checkLogin()"
+    class="bg-black w-[340px] text-[#fff] rounded-[30px] text-[13px] p-[10px] "
+    >
+    Get Started
+  </button>
+</div>
+</body>
+<script src="login.js"></script>
+</html>
