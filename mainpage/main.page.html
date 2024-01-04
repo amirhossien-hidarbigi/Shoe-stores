@@ -20,7 +20,9 @@
         </div>
         <div class="flex items-center pl-16 gap-2">
           <div><img src="/mainpage/img.main/bell.svg" alt="" /></div>
-          <div><img src="/mainpage/img.main/heart.svg" alt="" /></div>
+          <a href="/mainpage/wishlist.html">
+            <div><img src="/mainpage/img.main/heart.svg" alt="" /></div>
+          </a>
         </div>
       </div>
     </header>
@@ -30,7 +32,7 @@
         class="w-[100%] outline-none pl-2"
         type="search"
         name=""
-        id=""
+        id="searchInput"
         placeholder="Search"
       />
     </div>
@@ -103,66 +105,78 @@
       </section>
     </div>
     <div class="flex justify-between px-2 mt-5">
-      <span class="font-bold">Most Popular</span>
+      <a href="/mainpage/Most Popular.html">
+        <span class="font-bold">Most Popular</span>
+      </a>
       <span class="font-bold">See All</span>
     </div>
 
-    <section class="grid grid-cols-2 gap-1 items-center mt-5 mb-10">
-      <div>
-        <div
-          class="border flex justify-center items-center bg-[#f3f3f3] rounded-[30px] w-[150px] h-[150px]"
-        >
-          <img src="/mainpage/img.main/shoe1.png" alt="" />
-        </div>
-        <span>K-Swiss ista Train...</span>
+    <div class="overflow-x-auto overflow-hidden flex gap-2 mt-4 no-scrollbar">
+      <button
+        id="allButton"
+        class="w-fit px-5 border rounded-[30px] flex-shrink-0"
+      >
+        All
+      </button>
+      <button
+        id="nikeButton"
+        class="w-fit px-5 border rounded-[30px] flex-shrink-0"
+      >
+        nike
+      </button>
+      <button
+        id="adidasButton"
+        class="w-fit px-5 border rounded-[30px] flex-shrink-0"
+      >
+        Adidas
+      </button>
+      <button
+        id="pumaButton"
+        class="w-fit px-5 border rounded-[30px] flex-shrink-0"
+      >
+        Puma
+      </button>
+      <button
+        id="asicsButton"
+        class="w-fit px-5 border rounded-[30px] flex-shrink-0"
+      >
+        Asics
+      </button>
+      <button
+        id="reebokButton"
+        class="w-fit px-5 border rounded-[30px] flex-shrink-0"
+      >
+        Reebok
+      </button>
+      <button
+        id="newBalanceButton"
+        class="w-fit px-5 border rounded-[30px] flex-shrink-0"
+      >
+        New Ba...
+      </button>
+      <button
+        id="converseButton"
+        class="w-fit px-5 border rounded-[30px] flex-shrink-0"
+      >
+        Converse
+      </button>
+    </div>
+
+    <!-- <div>
+      <div
+        class="border flex justify-center items-center bg-[#eceff1] rounded-[30px] w-[150px] h-[150px]"
+      >
+        <img src="/mainpage/image/adidas/1.png" alt="" />
+      </div>
+      <div class="flex flex-col">
+        <span>Adidas Superstar </span>
         <span>$ 85.00</span>
       </div>
-      <div>
-        <div
-          class="border flex justify-center items-center bg-[#f3f3f3] rounded-[30px] w-[150px] h-[150px]"
-        >
-          <img src="/mainpage/img.main/shoe2.png" alt="" />
-        </div>
-        <span>K-Swiss ista Train...</span>
-        <span>$ 85.00</span>
-      </div>
-      <div>
-        <div
-          class="border flex justify-center items-center bg-[#f3f3f3] rounded-[30px] w-[150px] h-[150px]"
-        >
-          <img src="/mainpage/img.main/shoe3.png" alt="" />
-        </div>
-        <span>K-Swiss ista Train...</span>
-        <span>$ 85.00</span>
-      </div>
-      <div>
-        <div
-          class="border flex justify-center items-center bg-[#f3f3f3] rounded-[30px] w-[150px] h-[150px]"
-        >
-          <img src="/mainpage/img.main/shoe4.png" alt="" />
-        </div>
-        <span>K-Swiss ista Train...</span>
-        <span>$ 85.00</span>
-      </div>
-      <div>
-        <div
-          class="border flex justify-center items-center bg-[#f3f3f3] rounded-[30px] w-[150px] h-[150px]"
-        >
-          <img src="/mainpage/img.main/shoe5.png" alt="" />
-        </div>
-        <span>K-Swiss ista Train...</span>
-        <span>$ 85.00</span>
-      </div>
-      <div>
-        <div
-          class="border flex justify-center items-center bg-[#f3f3f3] rounded-[30px] w-[150px] h-[150px]"
-        >
-          <img src="/mainpage/img.main/shoe6.png" alt="" />
-        </div>
-        <span>K-Swiss ista Train...</span>
-        <span>$ 85.00</span>
-      </div>
-    </section>
+    </div> -->
+    <div
+      id="dataDisplay"
+      class="flex flex-col gap-1 items-center mt-5 mb-10"
+    ></div>
     <footer
       class="flex justify-around fixed bottom-0 bg-white w-[100%] pr-5 h-[60px] items-center"
     >
@@ -187,5 +201,6 @@
         <span class="text-[13px]">Profile</span>
       </div>
     </footer>
+    <script src="mainpage.js"></script>
   </body>
 </html>
